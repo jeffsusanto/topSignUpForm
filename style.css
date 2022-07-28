@@ -50,20 +50,38 @@ body {
     width: 600px;
     background-color: rgba(0, 0, 0, 0.193);
     display: flex;
-    align-items: center;
     justify-content: center;
+
 }
 
 form{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    
 }
+
 form input{
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #6D768D;
     color: #ffffff;
+    font-family: pixelFont;
+    width: 500px;
+}
+
+.textInput{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.112);
+    gap: 0px 0px 20px 0px;
 }
 
 form button {
@@ -72,8 +90,11 @@ form button {
     border-radius: 10px;
     width: 500px;
     height: 50px;
+    transition: 0.5s;
 }
 
 form button:hover{
-    background-color: #e9695f;
+    background-color: #6D768D;
+    color: #d9b1ae;
+    text-shadow: 0px 5px #404B5D;
 }
