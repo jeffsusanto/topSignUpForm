@@ -7,13 +7,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: pixelFont ;
+    font-family: pixelFont;
 }
 
 @font-face {
     font-family: pixelFont;
     src: url('font/PixeloidSansBold-RpeJo.ttf');
-  }
+}
 
 .container {
     border: 5px solid #404B5D;
@@ -38,7 +38,7 @@ body {
     text-shadow: 0px 8px #404B5D;
 }
 
-.para{
+.para {
     font-size: 10px;
     color: #404B5D;
     text-shadow: 0px 1px #404B5D;
@@ -54,15 +54,15 @@ body {
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
-form input{
+form input {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #6D768D;
@@ -71,17 +71,17 @@ form input{
     width: 500px;
 }
 
-.textInput{
+.textInput {
     display: flex;
     justify-content: space-between;
 }
-.input{
+
+.input {
     width: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.112);
-    gap: 0px 0px 20px 0px;
 }
 
 form button {
@@ -93,8 +93,47 @@ form button {
     transition: 0.5s;
 }
 
-form button:hover{
+form button:hover {
     background-color: #6D768D;
     color: #d9b1ae;
     text-shadow: 0px 5px #404B5D;
+}
+
+.avatarSelect {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.avatarChoice {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.avatarSelect img {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio]+img {
+    cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    border: 100px solid black;
 }
